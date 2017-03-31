@@ -14,7 +14,7 @@ class KeycloakSpec extends PropSpec with GeneratorDrivenPropertyChecks with Matc
   val kcApi: Uri = Uri.uri("http://keycloak.default.svc.cluster.local/auth")
 
   property("each institution has their own groups") {
- //   val realms = client.expect[List[Realm]](kcApi).syncValue
+    val realms = client.expect[List[Realm]](kcApi / "admin" / "realms").syncValue
     fail
   }
 

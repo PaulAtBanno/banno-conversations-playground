@@ -34,11 +34,13 @@ libraryDependencies ++= Seq(
   "org.http4s"                  %% "http4s-blaze-server"          % http4sVersion,
   "org.http4s"                  %% "http4s-blaze-client"          % http4sVersion,
   "org.http4s"                  %% "http4s-dsl"                   % http4sVersion,
+  "org.http4s"                  %% "http4s-argonaut"              % http4sVersion,
   "com.nimbusds"                 % "oauth2-oidc-sdk"              % "5.24",
   "org.keycloak"                 % "keycloak-authz-client"        % "2.5.4.Final",
   "oncue.knobs"                 %% "core"                         % "3.9.16aa",
   "io.verizon.journal"          %% "core"                         % "3.0.18",
   "org.scalatest"               %% "scalatest"                    % "3.0.1"       % "test",
+  "org.typelevel"               %% "scalaz-scalatest"             % "1.1.2"       % "test",
   "org.scalacheck"              %% "scalacheck"                   % "1.13.4"      % "test",
   "com.lihaoyi"                  % "ammonite"                     % "0.8.2"       % "test" cross CrossVersion.full
 )
