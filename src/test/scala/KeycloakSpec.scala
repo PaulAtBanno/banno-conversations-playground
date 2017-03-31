@@ -2,9 +2,9 @@ package com.banno.conversations
 
 import org.scalatest._
 import prop._
-// import org.scalacheck.{ Arbitrary, Gen }
+import org.typelevel.scalatest.TaskValues
 
-class KeycloakSpec extends PropSpec with GeneratorDrivenPropertyChecks with Matchers {
+class KeycloakSpec extends PropSpec with GeneratorDrivenPropertyChecks with TaskValues with Matchers {
   import org.http4s._
   import org.http4s.client.Client
   import org.http4s.client.middleware.FollowRedirect
